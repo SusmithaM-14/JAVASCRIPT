@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/style.css">
+        <script src="Javascript/Validation.js">
+            
+        </script>
+    </head>
+    <body>
+        <h1><center>Submit Your Application</center></h1>
+            <p><center>for <b>.NET Developer(Fresher)</b></center></p>
+            <h3> Personal Information <br></h3>
+                    <label for="Name">Name as per ID proof <span style="color: red;">*</span></label>
+                    <label for="Name" id="lab1" style="color: red; visibility: hidden;">Invalid</label><br>
+                    <input type="text" name="" id="name"><br>
+                    <br>
+                    <label for="FName">Father's Name<span style="color: red;">*</span></label><br>
+                    <input type="text" name="" id="fname"><br>
+                    <br>
+
+                    <!-- Validation for Email -->
+
+                    <label for="Email">Email<span style="color: red;">*</span></label>
+                    <label for="Email" id="lbl1" style="color: red; visibility: hidden;">Invalid</label><br>
+                    <input id="Email" type="text" name="Email" ><br>
+                    <br>
+                    
+                    <!-- Validation for Date of Birth -->
+
+                    <label for="dob">Date of Birth<span style="color: red;">*</span></label>
+                    <label for="dob" id="lbl4" style="color: red; visibility: hidden;">Invalid</label><br>
+                    <input type="text" name="" id="dob" placeholder="DD-MM-YYYY"><br>
+                    <br>
+
+                    <!-- Validation for Mobile number -->
+
+                    <label for="num">Mobile Number<span style="color: red;">*</span></label>
+                    <label for="text1" id="lbl" style="color: red; visibility: hidden;">Invalid</label><br>
+                    <input id="text1" placeholder="number" type="text"><br>
+                    <br>
+
+                    <label for="CurrentAddress">Current Address<span style="color: red;">*</span></label>
+                    <label for="Address" id="address" style="color: red; visibility: hidden;">Invalid</label><br>
+                    <input type="text" name="" id="CurrentAddress"><br>
+                    <br>
+                    <input type="text" name="" id="Address" placeholder="AddressLine2"><br>
+                    <br>
+                    <input type="text" name="" id="city" placeholder="City"><br>
+                    <br>
+                    <label for="State">State<span style="color: red;">*</span></label><br>
+                    <select id="State" name="State" >
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="AndhraPradesh">AndhraPradesh</option>
+                        <option value="Pondy">Pondy</option>
+                    </select><br>
+                    <br>
+
+                    <!-- Validation for CurrentAddress Pincode -->
+
+                    <input type="text" name="Pincode" id="Pincode" placeholder="Pincode">
+                    <label for="text" id="lbl2" style="color: red; visibility: hidden;">Invalid</label><br>
+                    <br>
+
+                <!--Autofill then Address when user click the checkbox -->
+
+                    <label for="PAddress">Permanent Address<span style="color: red;">*</span></label>
+                    <label for="Address" id="label1" style="color: red; visibility: hidden;">Invalid</label>
+                    <input type="checkbox" name="SAddress" id="SAddress" onclick ="autofill()" >
+                    Same as Permanent Address
+                    <br>
+                    <input type="text" name="" id="CurrentAddress2"><br>
+                    <br>
+                    <input type="text" name="" id="Address2" placeholder="AddressLine2"><br>
+                    <br>
+                    <input type="text" name="" id="city1" placeholder="City"><br>
+                    <br>
+                    <label for="State">State<span style="color: red;">*</span></label><br>
+                    <select id="State2" name="State" >
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="AndhraPradesh">AndhraPradesh</option>
+                        <option value="Pondy">Pondy</option>
+                    </select><br>
+                    <br>
+
+                    <!-- Validation for Permanent Address Pincode -->
+
+                    <input type="text" name="Pincode" id="Pincode2" placeholder="Pincode">
+                    <label for="text" id="lbl3" style="color: red; visibility: hidden;">Invalid</label><br>
+                    <br>
+                    <label for="photo">Upload Photo<span style="color: red;">*</span></label><br>
+                    <form action="../../Susmitha/dept/cse/image/Flower.jpg">
+                        <input type="file" id="myFile" name="filename"><br>
+                        <br>
+                    </form>
+                <button onclick="validation()"> submit</button>
+    </body>
+</html>
